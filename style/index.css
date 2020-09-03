@@ -150,9 +150,7 @@ aside p{
     margin: 2% auto;
     width: 50%;
 }
-footer aside p{
-    text-align: center
-}
+
 /* styling for comments.html */
 
 .latest-comment-section img {
@@ -167,38 +165,70 @@ footer aside p{
     margin: 2rem;
 }
 
-#old-comments h2 {
-    text-align: center;
-}
-
-#old-comments p {
-    margin: 1rem
+.old-comments {
+    margin: 4% 2%;
 }
 
 /* styling for contact.html */
 
-.about-head {
+.contact-header {
+
     display: flex;
     justify-content: space-between;
+    margin: 0 0 2%;
+}
+ .contact-header #contact h1{
+    font-size: 4vw;
+    text-align: left;
+    width:25%;
+}
+.contact-nav{
+    display: flex;
+    width: 35%;
+    padding: 1%;
+    align-items: center;
+}
+.contact-nav .nav-button{
+    width: 24%;
+    height: 2rem;
 }
 
 .main img {
-    max-width: 100%;
+    /* position: absolute; */
+    z-index: -1;
+    max-width: 94%;
+    margin: 03%;
+}
+.title-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    /* position:relative; */
+    /* top: -65vh; */
+}
+.title-text h2{
+    margin:0 0 2%
+
 }
 
-.main header {
-    position: absolute;
-    z-index: 2;
-    left: 25%;
-    top: 15%;
+.title-text p {
+    width: 50%;
+    text-align: center;
+    margin: 0 0 4%;
 }
 
-.main p {
-    width: 50%
-}
-
-.other-contacts img {
+.other-contact-images{
+    display: flex;
+    justify-content: space-evenly;
+ }
+.other-contact-images a{
     width: 30%;
+}
+.other-contact-images{
+    margin: 2.5% 0 ;
 }
 /* Styling for index.html */
 
@@ -401,11 +431,20 @@ footer p {
 
 /* Now to add some Media Queries */
 
+@media (max-width: 1000px){
+    .title-text{
+        top: -57vh;
+    }
+}
 
 @media (max-width: 800px) {
     * {
-        border: 1px solid orange;
+        border:.25px dashed orange;
     }
+    .title-text{
+        top: -45vh;
+    }
+
     h1{
         font-size:7vw;
     }
@@ -441,13 +480,22 @@ footer p {
     line-height: 1.2
 }
 }
-
+@media (max-width: 650px) {
+    .title-text{
+        top: -37vh;
+}
 @media (max-width: 500px) {
 
     * {
-        border: 1px solid blue;
+        border:.25px dashed blue;
     }
 
+    .title-text{
+        top: -30vh;
+    }
+    .title-text h2, .title-text p {
+        width: 100%;
+    }
     h1{
         font-size:8vw;
     }

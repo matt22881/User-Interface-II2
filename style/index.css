@@ -39,7 +39,7 @@ div img{
 
 body {
     font-size: 1.6rem;
-    background-color: #ACC0C6;
+    background-color: #A5ACAF;
 }
 
 h1, h2, h3{
@@ -106,7 +106,13 @@ h2{
 h3{
     font-size:2vw;
 }
-
+aside{
+    margin: 3%;
+}
+aside p{
+    text-align: center;
+    margin:0 0 3rem;
+}
 /* Page specific styles now */
 
 /* styling for about.html */
@@ -120,10 +126,10 @@ h3{
 .stuff-title h2{
     text-align: left;
 }
-.stuff-quip {
-    text-decoration-line: underline overline;
-    text-decoration-style: wavy;
-    margin:1rem 0;
+.stuff-quip q{
+    text-decoration: underline wavy;
+    /* text-decoration-style: wavy; */
+    margin:1rem;
     padding: 2rem 1rem;
 }
 .stories{
@@ -141,10 +147,12 @@ h3{
 }
 
 .others-say p {
-    margin: 0 auto;
+    margin: 2% auto;
     width: 50%;
 }
-
+footer aside p{
+    text-align: center
+}
 /* styling for comments.html */
 
 .latest-comment-section img {
@@ -305,7 +313,7 @@ footer {
     padding: 0;
     max-width: 100%;
     height: 6rem;
-    background: #000;
+    background: rgb(82, 80, 80);
     padding: 0;
 }
 
@@ -315,7 +323,7 @@ footer {
 }
 
 footer p {
-    color: #696969;
+    color: #000;
     text-align: left;
     margin-bottom: 0
 }
@@ -384,9 +392,6 @@ footer p {
     100% {
         background-position: 0 0;
     }
-}
-.ssl img{
-    max-width: 15%;
 }
 
 

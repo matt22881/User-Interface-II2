@@ -240,25 +240,27 @@ aside p{
     width: 100%;
 }
 
-#impressive {
+.impressive {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-
-#impressive img {
-    flex-direction: column;
+.impressive-img{
     width: 100%;
 }
+
+
 
 #impressive a {
     margin: .2rem;
 }
 
-#impressive .jibber-jabber {
+.impressive .jibber-jabber {
     display: flex;
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: justify;
     align-items: center;
-    line-height: 2.5;
+    line-height: 1.5;
     max-width: 12.5%;
     margin: 0 2rem;
 }
@@ -273,7 +275,7 @@ aside p{
     width: 50%;
 }
 
-#projects-navbar  {
+.projects-navbar  {
     /* Why did i have to do that??? */
     background:#152525;
     /* this should have been styled with the rest of the navs */
@@ -281,7 +283,7 @@ aside p{
     }
 
 
-    #projects-navbar {
+    .projects-navbar {
     display:flex;
     align-items: center;
     justify-content:center;
@@ -289,7 +291,7 @@ aside p{
     margin: auto;
 }
 
-#projects-navbar a {
+.projects-navbar a {
     width:25%;
     text-align: center;
 }
@@ -303,7 +305,7 @@ aside p{
 
 }
 
-#current-project-pic img {
+.current-project-pic img {
     width: 100%;
         margin: .2rem
 }

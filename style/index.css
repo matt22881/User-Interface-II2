@@ -194,7 +194,6 @@ aside p{
 }
 
 .main img {
-    /* position: absolute; */
     z-index: -1;
     max-width: 94%;
     margin: 03%;
@@ -268,22 +267,17 @@ aside p{
 /* styling for projects.html */
 
 
-.projects-header-title{
-    display: block;
-}
 
-.projects-page-header {
-
-}
-.projects-header-title {
+.projects-header-title h1{
 
     width: 50%;
-    text-align:left
+    text-align:left;
+    margin: 0 2rem;
 }
 .projects-navbar{
     display: flex;
-    flex-direction:row;
-    justify-content: flex start;
+    /* flex-direction:row;
+    justify-content: flex-start; */
 
     width: 30%;
     margin: 0 0 0 2rem;
@@ -424,18 +418,10 @@ footer p {
 
 /* Now to add some Media Queries */
 
-@media (max-width: 1000px){
-    .title-text{
-        top: -57vh;
-    }
-}
 
 @media (max-width: 800px) {
     * {
         border:.25px dashed orange;
-    }
-    .title-text{
-        top: -45vh;
     }
 
     h1{
@@ -451,46 +437,44 @@ footer p {
     header, button, aside {
         font-size: 1.5vw;
     }
-#projects-header-title h1 {
-    clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+    .contact-nav {
+        width: 80%;
+        height: 2vw;
+        margin: auto 0;
+    }
+    .projects-page-header {
+        width: 90%
+}
+    .impressive .jibber-jabber {
+        padding: .75rem;
+    }
+    .projects-header-title h1{
+        width: 100%;
 }
 
-.projects-page-header {
-    width: 90%
-}
+    .projects-navbar {
+        width: 60%
+    }
 
-.project-subtitle h2 {
-    font-size: 1.8rem
-}
+    .projects-navbar .nav-button a{
+        font-size: 1.6rem;
+    }
 
 .project-paragraph {
     line-height: 1.2
 }
 }
-@media (max-width: 650px) {
-    .title-text{
-        top: -37vh;
-}
+
+
 @media (max-width: 500px) {
 
     * {
         border:.25px dashed blue;
     }
 
-    .title-text{
-        top: -30vh;
-    }
-    .title-text h2, .title-text p {
-        width: 100%;
-    }
+
     h1{
-        font-size:8vw;
+        display: none;
     }
 
     h2{
@@ -502,38 +486,66 @@ footer p {
     header, button, aside {
         font-size: 2vw;
     }
-#projects-header-title h1 {
-  clip-path: unset;
-  height: 100%;
-  overflow: none;
-  position: static;
-  width: 100%;
-  text-align: center;
-  font-size: 2rem;
+    .projects-navbar{
+        width: 100%;
+        position: fixed;
+        opacity: 75%;
+        margin: 0;
+    }
+    .projects-navbar .nav-button{
+        width: 18%;
+    }
+    .comments-navbar{
+        width: 100%;
+        position: fixed;
+        opacity: 75%;
+        margin: 0;
+    }
+    .index-nav{
+        width: 100%;
+        position: fixed;
+        opacity: 75%;
+        margin: 0;
+    }
+    .contact-nav{
+        width: 100%;
+        position: fixed;
+        opacity: 75%;
+        margin: 0;
+    }
+    .impressive-img {
+        display: inline-block;
+
+    }
+    .impressive .jibber-jabber {
+        background: teal;
+        display: block;
+        padding: 0;
+        width: 85%;
+        margin: 0;
+        line-height:1;
+    }
+
+.   .current-project {
+        flex-direction: column;
+        align-items: center;
 }
-.projects-nav a {
-    font-size: 1.1rem;
+    .project-subtitle h2 {
+        font-size: 2.4rem;
+        text-align: center
 }
 
-.current-project {
-    flex-direction: column;
-    align-items: center;
-}
-.project-subtitle h2 {
-    font-size: 2.4rem;
-    text-align: center
-}
+    .project-paragraph {
+        line-height: 1.3;
+        text-align: justify;
+    }
 
-.project-paragraph {
-    line-height: 1.3;
-    text-align: justify;
-}
-
-.projects-container div {
-    flex-flow: row wrap;
+    .projects-container div {
+        flex-flow: row wrap;
 }
 
 .projects-container img {
     width: 45%
 }
+
 }

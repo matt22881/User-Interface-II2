@@ -267,49 +267,47 @@ aside p{
 
 /* styling for projects.html */
 
-.projects-body {
-    margin:1rem;
+
+.projects-header-title{
+    display: block;
 }
 
 .projects-page-header {
+
+}
+.projects-header-title {
+
     width: 50%;
+    text-align:left
 }
-
-.projects-navbar  {
-    /* Why did i have to do that??? */
-    background:#152525;
-    /* this should have been styled with the rest of the navs */
-    /* the other pages it was colored!!! */
-    }
-
-
-    .projects-navbar {
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    width: 85%;
-    margin: auto;
-}
-
-.projects-navbar a {
-    width:25%;
-    text-align: center;
-}
-
-.current-project {
+.projects-navbar{
     display: flex;
-}
+    flex-direction:row;
+    justify-content: flex start;
 
+    width: 30%;
+    margin: 0 0 0 2rem;
+}
+.projects-navbar .nav-button{
+    width: 20%
+}
+.projects-navbar{
+    width: 50%;
+    font-size: 1.6rem;
+}
+.projects-navbar .nav-button{
+    width: 24%;
+}
+.current-project {
+    display:flex;
+}
 .image-container {
     width: 100%
-
 }
-
 .current-project-pic img {
     width: 100%;
         margin: .2rem
 }
-
 .current-project-jibber-jabber {
     padding: 2rem;
     display: flex;
@@ -317,7 +315,6 @@ aside p{
     justify-content: space-evenly;
     width: 75%;
 }
-
 .other-projects h3 {
     text-align: center;
 }
@@ -333,7 +330,6 @@ aside p{
     display: flex;
     justify-content: space-evenly;
 }
-
 
 /* Fancy footer goes at the bottom */
 
@@ -425,11 +421,6 @@ footer p {
         background-position: 0 0;
     }
 }
-
-
-
-
-
 
 /* Now to add some Media Queries */
 
